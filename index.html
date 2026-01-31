@@ -1034,11 +1034,35 @@
   }
   
   .elementor-button-text {
-      outline : none;
-      border : none;
-      border-width : 0;
       cursor : "pointer";
   }
+  
+  /* Target the button */
+.elementor-button.elementor-animation-pulse {
+    animation: zoom-pulse 2s infinite ease-in-out;
+    display: inline-flex;
+    align-items: center;
+    transition: transform 0.5s ease;
+}
+
+/* Define the zoom animation */
+@keyframes zoom-pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.2); /* Grows by 8% */
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+/* Slight extra lift when the user actually hovers */
+.elementor-button.elementor-animation-pulse:hover {
+    transform: scale(1.1) !important;
+    animation-play-state: paused; /* Optional: stops pulsing on hover */
+}
 
   .elementor-widget-image-box .elementor-image-box-content {
     width: 100%
@@ -5922,34 +5946,65 @@ self.postMessage(data)}
           <div class="thankyou-wrapper">
             <div class="thankyou-card">
 
-              <h2 class="subtitle">🌿 Please Read Carefully Before Joining</h2>
+              <!--<h2 class="subtitle">🌿 Please Read Carefully Before Joining</h2>-->
 
               <p class="description">
-                ✅ We follow a <strong>proper Ayurvedic approach</strong> that focuses on improving digestion,
-                balancing body systems, and supporting natural fat reduction over time.
+                  ✅ અમે <strong>શુદ્ધ આયુર્વેદિક</strong> પદ્ધતિ અનુસરીએ છીએ, જે પાચન સુધારવા, શરીરના આંતરિક સંતુલન બરાબર કરવા અને સમય સાથે કુદરતી રીતે ચરબી ઘટાડવામાં મદદ કરે છે.
+                  
+                  
+ <!--We follow a <strong>proper Ayurvedic approach</strong> that focuses on improving digestion,-->
+                <!--balancing body systems, and supporting natural fat reduction over time.-->
               </p>
 
-              <h3 class="section-title">🎥 Before Taking Any Ayurvedic Medicine</h3>
+              <h3 class="section-title">🎥 
+              અમારી આયુર્વેદિક દવા લેતાં પહેલાં
+              <!--Before Taking Any Ayurvedic Medicine-->
+              </h3>
 
               <p class="description">
-                We personally explain everything in detail through a <strong>live Zoom webinar</strong>, including:
+                <!--We personally explain everything in detail through a <strong>live Zoom webinar</strong>, including:-->
+                
+                અમે <strong>Free Live Zoom Webinar</strong> મારફતે તમામ બાબતો વિગતે સમજાવીએ છીએ, જેમ કે:
               </p>
 
               <ul class="list">
-                <li>How the medicine works inside the body</li>
-                <li>Diet and lifestyle guidance to support the medicine</li>
-                <li>Safety, dosage, and common doubts</li>
+                  
+                  
+                <li>
+                     દવા શરીરમાં કેવી રીતે કામ કરે છે.
+                    <!--How the medicine works inside the body-->
+                </li>
+                <li>
+                    કઈ રીતે તમારું 2 મહિનામાં 15-20% જેટલું વજન ઘટશે.
+                    <!--Diet and lifestyle guidance to support the medicine-->
+                </li>
+                <li>
+                    ગેસ, એસિડિટી અને કબજિયાત જેવી સમસ્યાઓમાં રાહત મળે છે.
+                    <!--Safety, dosage, and common doubts-->
+                </li>
+                <li>
+                    માથાનો દુખાવો અને શરીરના દુખાવામાં ઘટાડો થાય છે.
+                </li>
+                <li>
+                    શરીરમાં ભેગી થયેલી ઝેરી તત્વો (toxins) બહાર નીકળે છે
+                </li>
+                
+                
               </ul>
 
               <p class="description">
-                We do <strong>not sell blindly</strong>.<br>
-                First, we explain everything clearly in a live Zoom session,
-                so you can decide with <strong>full confidence and clarity</strong>.
+                  પ્રથમ અમે <strong> Live Zoom 
+                  </strong> સેશનમાં બધું સ્પષ્ટ રીતે સમજાવીએ છીએ, જેથી તમે સંપૂર્ણ સમજ અને વિશ્વાસ સાથે નિર્ણય લઈ શકો.
+
+                <!--We do <strong>not sell blindly</strong>.<br>-->
+                <!--First, we explain everything clearly in a live Zoom session,-->
+                <!--so you can decide with <strong>full confidence and clarity</strong>.-->
               </p>
 
               <p class="cta-text">
-                👉 Click the button below only if you are <strong>serious about weight loss</strong> and Ayurvedic
-                treatment.
+                👉  જો તમે ખરેખર વજન ઘટાડવા અને આયુર્વેદિક સારવાર માટે ગંભીર હોવ તો નીચે આપેલ બટન પર ક્લિક કરો.
+                 <!--Click the button below only if you are <strong>serious about weight loss</strong> and Ayurvedic-->
+                <!--treatment.-->
               </p>
 
             </div>
