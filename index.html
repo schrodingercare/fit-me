@@ -6,6 +6,8 @@
     window.two_page_loaded = true
   })
 
+  const myWhatsAppLink = "https://chat.whatsapp.com/hehehe";
+
   function logLoaded() {
     console.log('window is loaded')
   }
@@ -6048,7 +6050,7 @@ self.postMessage(data)}
               <!--              </div>-->
               <div
                   class="elementor-field-group elementor-column elementor-field-type-submit elementor-col-100 e-form__buttons">
-                <a href="https://www.google.com" target="_blank" class="elementor-button elementor-size-md elementor-animation-pulse">
+                <a href="" target="_blank" class="dynamic-whatsapp-link elementor-button elementor-size-md elementor-animation-pulse">
                   <svg aria-hidden="true" class="e-font-icon-svg e-fas-users" viewBox="0 0 640 512"
                        xmlns="http://www.w3.org/2000/svg">
                     <path
@@ -6217,5 +6219,16 @@ self.postMessage(data)}
   <script data-pagespeed-no-defer data-two-no-delay type="text/javascript"
           src="https://swapnilgautam.com/wp-content/plugins/tenweb-speed-optimizer/includes/external/js/vanilla-lazyload/two_bg_vanilla.js"></script>
           
+          
+          <script>
+    (function() {
+        // Target by the specific class you provided
+        const targetBtn = document.querySelector('.dynamic-whatsapp-link');
+        
+        if (targetBtn) {
+            targetBtn.href = myWhatsAppLink;
+        }
+    })();
+</script>
 </body>
 </html>
