@@ -6414,13 +6414,14 @@ self.postMessage(data)}
 
         <script>
             (function() {
-                // Target by the specific class you provided
-                const targetBtn = document.querySelector('.dynamic-whatsapp-link');
+    // Select all elements with the specific class
+    const targetButtons = document.querySelectorAll('.dynamic-whatsapp-link');
 
-                if (targetBtn) {
-                    targetBtn.href = myWhatsAppLink;
-                }
-            })();
+    // Loop through the NodeList and update each href
+    targetButtons.forEach(btn => {
+        btn.href = myWhatsAppLink;
+    });
+})();
         </script>
 </body>
 
